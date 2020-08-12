@@ -11,7 +11,7 @@ const alanKey =
 function App() {
   const classes = useStyles();
   const [newsArticles, setNewsArticles] = useState([]);
-  const [activeArticle, setActiveArticle] = useState(0);
+  const [activeArticle, setActiveArticle] = useState(-1);
 
   useEffect(() => {
     alanBtn({
@@ -19,6 +19,7 @@ function App() {
       onCommand: ({ command, articles }) => {
         if (command === "newHeadlines") {
           setNewsArticles(articles);
+          setActiveArticle(-1);
         } else if (command === "highlight") {
           setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
         }
