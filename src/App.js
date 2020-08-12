@@ -40,6 +40,10 @@ const App = () => {
           } else {
             alanBtn().playText("Please try that again...");
           }
+        } else if (command === "developer") {
+          window.open("https://www.dhruvilgajjar.engineer/", "_blank");
+          // window.location.href = "https://www.dhruvilgajjar.engineer/";
+          alanBtn().playText("Opening developer portfolio.");
         }
       },
     });
