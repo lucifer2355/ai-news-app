@@ -77,6 +77,12 @@ const App = () => {
         />
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
+      <Typography variant='h6' style={{ textAlign: "center" }}>
+        Know about developer saying: who develop this site
+      </Typography>
+      <Typography variant='h6' style={{ textAlign: "center" }}>
+        also you can small talk: who are you?
+      </Typography>
     </div>
   );
 };
