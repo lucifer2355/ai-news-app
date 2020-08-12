@@ -17,7 +17,7 @@ const NewsCard = ({
   const classes = useStyles();
 
   return (
-    <Card className={classNames(classes.card)}>
+    <Card className={classes.card}>
       <CardActionArea href={url} target='_blank'>
         <CardMedia
           className={classes.media}
