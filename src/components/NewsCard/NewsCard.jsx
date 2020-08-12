@@ -1,11 +1,7 @@
 import React from "react";
 
 const NewsCard = () => {
-  return (
-    <div>
-      <h1>News Card</h1>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default NewsCard;
